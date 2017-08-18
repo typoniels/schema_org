@@ -1,0 +1,28 @@
+{
+  "name": "codingms/schema-org",
+  "type": "typo3-cms-extension",
+  "description": "Adds Schema.org information into your site.",
+  "version": "1.0.0.DEV",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "Schema",
+    "Schema.org"
+  ],
+  "homepage": "http://www.coding.ms",
+  "require": {
+    "typo3/cms-core": ">=7.6.0,<8.8"
+  },
+  "authors": [
+    {
+      "name": "Thomas Deuling",
+      "role": "Developer",
+      "homepage": "http://www.coding.ms"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CodingMs\\SchemaOrg\\": "Classes"
+    }
+  }
+}

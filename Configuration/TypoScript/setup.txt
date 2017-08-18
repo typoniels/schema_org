@@ -1,0 +1,58 @@
+plugin.tx_schemaorg {
+	settings {
+		page {
+			# context is not required
+			# Find other types on:
+			# http://schema.org/LocalBusiness
+			type = ProfessionalService
+			name = Your company name
+			url = {$themes.configuration.baseurl}
+			telephone = +49 12 34 56 78 0
+			image {
+				type = ImageObject
+				url = http://address-manager.t3co.de/typo3conf/ext/_processed_/5/6/csm_logo_75f28f50dc.png
+				caption = Your company name
+			}
+			address {
+				type = PostalAddress
+				streetAddress = Musterstrasse 123
+				addressLocality = Musterstadt
+				postalCode = 54321
+			}
+			geo {
+				type = GeoCoordinates
+				latitude = 51° 54' 15.48'' N
+				longitude = 7° 38' 51.65'' E
+			}
+			# Opening hours
+			openingHoursSpecification {
+				type = OpeningHoursSpecification
+				dayOfWeek {
+					# Builds a JSON array into node dayOfWeek
+					ARRAY = Monday,Tuesday,Wednesday,Thursday,Friday
+				}
+				opens = 09:00
+				closes = 21:00
+			}
+			# Contact
+			contactPoint {
+				type = ContactPoint
+				telephone = +49 12 34 56 78 0
+				# contact types for phone numbers:
+				# https://developers.google.com/search/docs/data-types/corporate-contacts
+				contactType = customer service
+			}
+		}
+	}
+}
+plugin.tx_schemaorg.widgets.page = USER
+plugin.tx_schemaorg.widgets.page {
+	userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+	pluginKey = Schema
+	pluginName = Schema
+	extensionName = SchemaOrg
+	vendorName = CodingMs
+	controller = Schema
+	action = inject
+}
+page.1503070436 < plugin.tx_schemaorg.widgets.page
