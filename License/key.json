@@ -1,0 +1,14 @@
+{
+  "license": {
+    "owner": "LicenseOwnerName",
+    "version": "1.0.0.DEV",
+    "domains": {
+      "development": [
+        "www.development.tld"
+      ],
+      "production": [
+        "www.production.tld"
+      ]
+    }
+  }
+}
