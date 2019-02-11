@@ -2,23 +2,24 @@
   "name": "codingms/schema-org",
   "type": "typo3-cms-extension",
   "description": "Adds Schema.org information into your site.",
-  "version": "1.0.0.DEV",
+  "version": "1.1.0.DEV",
   "keywords": [
     "TYPO3",
     "extension",
     "Schema",
-    "Schema.org"
+    "Schema.org",
+    "structured data"
   ],
-  "homepage": "http://www.coding.ms",
+  "homepage": "https://www.coding.ms",
   "require": {
     "ext-json": "*",
-    "typo3/cms-core": ">=7.6.0,<8.8"
+    "typo3/cms-core": ">=7.6.0,<9.6"
   },
   "authors": [
     {
       "name": "Thomas Deuling",
       "role": "Developer",
-      "homepage": "http://www.coding.ms"
+      "homepage": "https://www.coding.ms"
     }
   ],
   "autoload": {
