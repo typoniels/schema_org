@@ -11,6 +11,7 @@
   ],
   "homepage": "http://www.coding.ms",
   "require": {
+    "ext-json": "*",
     "typo3/cms-core": ">=7.6.0,<8.8"
   },
   "authors": [

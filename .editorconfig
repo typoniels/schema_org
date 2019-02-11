@@ -9,9 +9,17 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 
 # XML
-[*.xml,*.html]
+[*.{xml,html,xlf}]
+indent_style = tab
+
+# Stylesheets
+[*.{css,scss,less}]
 indent_style = tab
 indent_size = 4
+
+# Markdown
+[*.md]
+indent_style = tab
 
 # PHP
 [*.php]
@@ -19,6 +27,5 @@ indent_style = space
 indent_size = 4
 
 # TypoScript
-[*.ts,*.typoscript,*.pagets,*.constantsts,*.setupts]
-indent_style = space
-indent_size = 4
+[*.{ts,typoscript,pagets,constantsts,setupts,txt}]
+indent_style = tab

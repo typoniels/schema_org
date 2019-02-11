@@ -79,6 +79,71 @@ plugin.tx_schemaorg {
 }
 ```
 
+## Different opening hours on different days
+
+If you have different opening hours on different days, for example on saturday, you can configure it like that:
+
+```typo3_typoscript
+plugin.tx_schemaorg {
+	settings {
+		page {
+			#
+			#...
+			#
+			# Opening hours
+			openingHoursSpecification {
+				0 {
+					type = OpeningHoursSpecification
+					dayOfWeek {
+						# Builds a JSON array into node dayOfWeek
+						ARRAY = Monday,Tuesday,Wednesday,Thursday,Friday
+					}
+					opens = 09:00
+					closes = 21:00
+				}
+				1 {
+					type = OpeningHoursSpecification
+					dayOfWeek {
+						# Builds a JSON array into node dayOfWeek
+						ARRAY = Saturday
+					}
+					opens = 09:00
+					closes = 12:00
+				}
+			}
+			#
+			#...
+			#
+		}
+	}
+}
+```
+
+
+## How to add social media profiles
+
+Links for some social media profiles or pages can be added like this:
+
+```typo3_typoscript
+plugin.tx_schemaorg {
+	settings {
+		page {
+			#
+			#...
+			#
+			sameAs {
+				# Simply add multiple pages divided by comma
+				ARRAY = https://twitter.com/codingms,https://www.instagram.com/codingms/
+			}
+			#
+			#...
+			#
+		}
+	}
+}
+```
+
+
 
 ## Links
 
