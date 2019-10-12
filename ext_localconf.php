@@ -1,16 +1,16 @@
 <?php
 if (!defined('TYPO3_MODE')) {
-	die('Access denied.');
+    die('Access denied.');
 }
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-	'CodingMs.' . $_EXTKEY,
-	'Schema',
-	array(
-		'Schema' => 'inject',
-	),
-	// non-cacheable actions
-	array(
-		//'Address' => '',
-	)
+    'CodingMs.schema_org',
+    'Schema',
+    [
+        'Schema' => 'inject',
+    ],
+    // non-cacheable actions
+    [
+        //'Address' => '',
+    ]
 );
