@@ -6,11 +6,6 @@ if (!defined('TYPO3_MODE')) {
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'CodingMs.schema_org',
     'Schema',
-    [
-        'Schema' => 'inject',
-    ],
-    // non-cacheable actions
-    [
-        //'Address' => '',
-    ]
+    ['Schema' => 'inject'],
+    []
 );

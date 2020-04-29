@@ -10,7 +10,7 @@ plugin.tx_schemaorg {
 			telephone = +49 12 34 56 78 0
 			image {
 				type = ImageObject
-				url = http://address-manager.t3co.de/typo3conf/ext/_processed_/5/6/csm_logo_75f28f50dc.png
+				url = https://www.coding.ms/fileadmin/extensions/schema_org/images/schema.org_produktbild.png
 				caption = Your company name
 			}
 			address {
