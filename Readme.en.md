@@ -148,5 +148,5 @@ plugin.tx_schemaorg {
 ## Links
 
 *   A full documentation for schema you'll find on: http://schema.org/
-*   If you need to test your schema data, visit this testing tool: https://search.google.com/structured-data/testing-tool
+*   If you need to test your schema data, try this testing tools: https://search.google.com/structured-data/testing-tool or https://search.google.com/test/rich-results
 *   More information about structured data: https://developers.google.com/search/docs/guides/intro-structured-data

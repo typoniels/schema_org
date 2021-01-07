@@ -1,8 +1,15 @@
 # Schema.org Extension Change-Log
 
+## 2020-01-07  Release of version 1.2.3
+
+*	[TASK] Add german translation
+
+
+
 ## 2020-08-20  Release of version 1.2.2
 
 *	[BUGFIX]  Moved extra tags to the right scope in composer.json
+
 
 
 ## 2020-08-20  Release of version 1.2.1
@@ -26,8 +33,6 @@
 
 
 ## 2019-02-11  Release of version 1.1.0
-
-### 2019-02-11
 
 *	[TASK] Updating editorconfig
 *	[TASK] Extending documentation
