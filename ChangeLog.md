@@ -1,5 +1,16 @@
 # Schema.org Extension Change-Log
 
+## 2020-08-20  Release of version 1.2.2
+
+*	[BUGFIX]  Moved extra tags to the right scope in composer.json
+
+
+## 2020-08-20  Release of version 1.2.1
+
+*	[TASK] Add extra tags
+
+
+
 ## 2020-04-29  Release of version 1.2.0
 
 *	[TASK] Migration for TYPO3 10
