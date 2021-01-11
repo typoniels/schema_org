@@ -1,5 +1,11 @@
 # Schema.org Extension Change-Log
 
+## 2020-01-11  Release of version 1.2.4
+
+*	[TASK] Add comment to empty template file
+
+
+
 ## 2020-01-07  Release of version 1.2.3
 
 *	[TASK] Add german translation
