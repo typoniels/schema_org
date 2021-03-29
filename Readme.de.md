@@ -145,6 +145,41 @@ plugin.tx_schemaorg {
 
 
 
+## Video Schema-Daten für YouTube, Vimeo, und weitere
+
+Verwendung via ViewHelper:
+
+```xml
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:schemaOrg="http://typo3.org/ns/CodingMs/SchemaOrg/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+    <f:for each="{product.otherImages}" as="videoItem" iteration="videoItemsIteration">
+        <f:if condition="{videoItem.originalResource.originalFile.properties.mime_type} === 'video/youtube'">
+            <schemaOrg:video file="{videoItem}" />
+        </f:if>
+    </f:for>
+
+</html>
+```
+
+Ergebnis:
+
+```html
+<script type="application/ld+json">{
+    "@context": "https:\/\/schema.org",
+    "@type": "VideoObject",
+    "contentURL": "https:\/\/www.youtube.com\/watch?v=1ZuZlPbomGg",
+    "description": "EIBACH | PRO-KIT | Performance Fahrwerksfedern (Deutsch)",
+    "name": "EIBACH | PRO-KIT | Performance Fahrwerksfedern (Deutsch)",
+    "thumbnailUrl": "https:\/\/i.ytimg.com\/vi\/1ZuZlPbomGg\/hqdefault.jpg",
+    "uploadDate": "2019-02-28T08:05:48+00:00"
+}
+</script>
+```
+
+
+
 ## Links
 
 *   Komplette Dokumentation zu Schema-Daten: http://schema.org/

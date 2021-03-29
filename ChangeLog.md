@@ -1,5 +1,10 @@
 # Schema.org Extension Change-Log
 
+## 2021-03-29  Release of version 1.3.0
+
+*	[FEATURE] Add ViewHelper for video schema data (YouTube, Vimeo, etc.)
+
+
 ## 2020-01-11  Release of version 1.2.4
 
 *	[TASK] Add comment to empty template file
