@@ -1,5 +1,5 @@
 {
-  "name": "codingms/schema-org",
+  "name": "typo3-ter/schema-org",
   "type": "typo3-cms-extension",
   "description": "Adds Schema.org information into your site.",
   "keywords": [
